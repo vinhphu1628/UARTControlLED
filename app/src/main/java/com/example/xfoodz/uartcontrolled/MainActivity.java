@@ -224,7 +224,7 @@ public class MainActivity extends Activity {
     public void init3(){
         count3_1 = 0;
         try {
-            mPwm.setPwmDutyCycle(10);
+            mPwm.setPwmDutyCycle(20);
         } catch (IOException e) {
             Log.e("Error","Unable to set Duty Cycle!");
         }
@@ -243,7 +243,7 @@ public class MainActivity extends Activity {
         direction = true;
         state = false;
         try {
-            mPwm.setPwmDutyCycle(10);
+            mPwm.setPwmDutyCycle(20);
         } catch (IOException e) {
             Log.e("Error","Unable to set Duty Cycle!");
         }
@@ -410,7 +410,7 @@ public class MainActivity extends Activity {
 
     public void initializePwm(Pwm pwm) throws IOException {
         pwm.setPwmFrequencyHz(120);
-        pwm.setPwmDutyCycle(10);
+        pwm.setPwmDutyCycle(20);
 
         // Enable the PWM signal
         pwm.setEnabled(true);
@@ -784,7 +784,7 @@ public class MainActivity extends Activity {
         }
         try {
             mPwm.setPwmFrequencyHz(120);
-            mPwm.setPwmDutyCycle(10);
+            mPwm.setPwmDutyCycle(20);
         } catch (IOException e) {
             Log.e(TAG, "Unable to set PWM!");
         }
